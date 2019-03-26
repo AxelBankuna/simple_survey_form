@@ -1,0 +1,112 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<!--
+
+Hello Camper!
+
+For now, the test suite only works in Chrome! Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding!
+
+- The freeCodeCamp Team
+
+-->
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel = "stylesheet" type = "text/css" href = "style.css" />
+</head>
+<body>
+
+<h1 id="title">
+    Survey Form
+</h1>
+<div id="container">
+    <p id="description">
+        <em>Let us know how we can improve freeCodeCamp</em>
+    </p>
+
+    <form action="" id="survey-form">
+        <div class="row">
+            <div class="left"><label for="name" id="name-label">Name:</label></div>
+            <div class="right"><input type="text" id="name" placeholder="Enter your name" required></div>
+        </div>
+
+        <div class="row">
+            <div class="left"><label for="name" id="email-label">Email:</label></div>
+            <div class="right"><input type="email" id="email" placeholder="Enter your Email" required></div>
+        </div>
+
+        <div class="row">
+            <div class="left"><label for="name" id="number-label">Age:</label></div>
+            <div class="right"><input type="number" id="number" min="1" max="125" placeholder="Age" required></div>
+        </div>
+
+        <div class="row">
+            <div class="left"><label for="dropdown" id="name-dropdown">Which option best describes your current role?</label></div>
+            <div class="right"><select name="dropdown" id="dropdown">
+                <option value="" disabled>Select an option</option>
+                <option value="Student">Student</option>
+                <option value="Full Time Learner">Full Time Learner</option>
+                <option value="Full Time Job">Full Time Job</option>
+                <option value="Prefer Not To Say">Prefer Not To Say</option>
+                <option value="Other">Other</option>
+            </select></div>
+        </div>
+
+        <div class="row">
+            <div class="left" id="shift"><label for="name" id="number-radio">* How likely is that you would recommend freeCodeCamp to a friend?</label></div>
+            <div class="right">
+                <input type="radio" name="radio" value="definitely" id="definitely">
+                <label for="name">Definitely</label><br>
+
+                <input type="radio" name="radio" value="maybe" id="maybe">
+                <label for="name">Maybe</label><br>
+
+                <input type="radio" name="radio" value="notsure" id="notsure">
+                <label for="name">Not sure</label>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="left"><label for="dropdown" id="name-dropdown2">What do you like most in FCC:</label></div>
+            <div class="right">
+                <select name="dropdown" id="dropdown2">
+                    <option value="" disabled>Select an option</option>
+                    <option value="challenges">Challenges</option>
+                    <option value="projects">Projects</option>
+                    <option value="community">Community</option>
+                    <option value="Open Source">Open Source</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="left"><label for="name" id="checkboxes">Things that should be improved in the future
+                (Check all that apply):</label></div>
+            <div class="right">
+                <input type="checkbox" name="check1" value="front" id="check1">
+                <label for="check1">Front-end Projects</label><br>
+
+                <input type="checkbox" name="check2" value="back" id="check2">
+                <label for="check2">Back-end Projects</label><br>
+
+                <input type="checkbox" name="check3" value="data" id="check3">
+                <label for="check3">Data Visualization</label>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="left"><label for="suggestions">Any Comments or Suggestions?</label></div>
+            <div class="right"><textarea name="suggestions" id="suggestions" cols="30" rows="10" placeholder="Enter your comments here..."></textarea></div>
+        </div>
+
+        <button type="submit" id="submit">Submit</button>
+
+    </form>
+</div>
+</body>
+</html>

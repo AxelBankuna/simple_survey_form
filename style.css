@@ -1,0 +1,29 @@
+body {
+    background: purple;
+    text-align: center;
+}
+
+#container {
+    background: yellow;
+    padding: 60px;
+    margin: 40px;
+    border-radius: 2%;
+    text-align: center;
+}
+
+.row{
+    width: auto;
+    margin: 10px;
+}
+
+.right {
+    display:inline-block;
+    width: 45%;
+    text-align: left;
+}
+
+.left {
+    display:inline-block;
+    width: 45%;
+    text-align: right;
+}
